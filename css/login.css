@@ -1,0 +1,130 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+   background-color:  #E0F2F1;
+}
+
+.login-form-container{
+    height:500px;
+    overflow: hidden;
+}
+.login-form-header{
+    color:purple;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height:65px;
+    width:100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+fieldset {
+    background-color: white;
+	margin:100px auto;
+	width: 230px;
+	border:1px solid white;
+    font-size: 1em;
+    padding: 0.7em;
+   font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#form-login{
+    display: none;
+}
+
+#form-login label, input{
+    background-color: white;
+	display: block;
+    font-size: inherit;
+    padding: 0.4em;
+    margin: 0.2em 0.6em;
+    /* the following ensures they're all using the same box-model for rendering */
+    -moz-box-sizing:border-box; /* or `border-box` */
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#form-login input{
+    height: 40px;
+    border:1px solid grey;
+    border-radius:4px;
+}
+
+#form-login input[type="submit"]{
+    cursor: pointer;
+    height: 50px;
+	border-radius: 0.2em;
+	margin-top: 15px;
+	width: 210px;
+	background-color: white;
+    margin-bottom: 29px;
+	border:1px solid black;
+}
+
+#form-login input[type="submit"]:hover{
+    background-color: teal;
+    color: white;
+}
+#form-login-group{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#form-login-group input[type="radio"]{
+    display: inline-block;
+    float: right;
+}
+
+#bottom-login-links{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    text-decoration: none;
+}
+#bottom-login-links a li{
+    padding-left: 10px;
+    cursor: pointer;
+}
+#bottom-login-links a{
+    color: black;
+    text-decoration: none;
+}
+#bottom-login-links a:hover{
+    color:teal;
+    text-decoration:underline;
+}
+
+#fgroupSubmit{
+    height: 50px;
+    border-radius: 4px;
+    width: 100%;
+    color: teal;
+    display: block;
+    border:1px solid teal;
+    background-color: white;
+}
+#fgroupSubmit:hover{
+    background-color: teal;
+    color: white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color:#757575;
+   font-size: 11.5pt; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color:#757575;
+   font-size: 11.5pt; 
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color:#757575;
+   font-size: 11.5pt; 
+}
+:-moz-placeholder { /* Firefox 18- */
+   color:#757575;
+   font-size: 11.5pt;
+}

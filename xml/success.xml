@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="./style.xsl"?>
+<cont>
+<successmsg>
+	  <title>You have successfully Registered.</title>
+	  <subtitle>Click link below to Login</subtitle>
+	  <login>Login</login>
+</successmsg> 
+</cont>

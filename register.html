@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="./css/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+		<div class="form-container">
+			<fieldset>
+			<div class="switch-group-container">
+				<div class="switch active" id="switch-button-1">User</div>
+				<div class="switch" id="switch-button-2">Candidate</div>
+			</div>
+				<form id="form-user" method="POST" action="">
+					<label>Voter Id/Uid:</label>
+					<input type="text" name="fid" placeholder="Enter user id">
+					<label>Email:</label>
+					<input type="email" name="femail" placeholder="Enter email">
+					<label>Password:</label>
+					<input type="password" name="fpassword" placeholder="Enter password">
+					<label>Re Enter Password:</label>
+					<input type="password" name="fpassword" placeholder="Type password again">
+					<button id="fUserSubmit"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+				</form>
+				<form id="form-cand">
+					<label>Candidate Name:</label>
+					<input type="text" name="fid" placeholder="Enter id">
+					<label>Email:</label>
+					<input type="email" name="femail" placeholder="Enter valid email">
+					<label>Password:</label>
+					<input type="password" name="fpassword" placeholder="Enter Password">
+					<label>Re Enter Password:</label>
+					<input type="password" name="fpassword" placeholder="Type password again">
+					<button id="fCandSubmit"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+				</form>
+			</fieldset>
+		</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		var userButton = $('#switch-button-1');
+		var candButton = $('#switch-button-2');
+		var userForm  = $('#form-user');
+		var candForm  = $('#form-cand');
+	    activeButton = userButton;
+
+		userButton.on('click',function(){
+
+			if(activeButton==candButton)
+			{
+				userButton.addClass("active");
+				candButton.removeClass("active");
+				candForm.fadeOut(300,function(){
+					userForm.fadeIn(300,function(){
+
+					});
+				});
+				setActiveButton(userButton);
+			}
+
+			
+	});
+		candButton.on('click',function(){
+			
+			if(activeButton==userButton)
+			{
+				candButton.addClass("active");
+				userButton.removeClass("active");
+				userForm.fadeOut(300,function(){
+					candForm.fadeIn(300,function(){
+
+					});
+				});
+				setActiveButton(candButton);
+			}
+	});
+
+});
+
+		function setActiveButton(id){
+				activeButton = id;
+		};
+		</script>
+</body>
+</html>
