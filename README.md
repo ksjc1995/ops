@@ -13,25 +13,25 @@
 
 # How to use?
 
-1) Download and Install xampp for your platform
+1) <strong>Download and Install xampp for your platform</strong>
         
     [Link](https://www.apachefriends.org/download.html)    
     
-2) Clone or download the project
+2) <strong>Clone or download the project</strong>
 
     `git clone link`
 
-3) Copy project folder in htdocs folder 
+3) <strong>Copy project folder in htdocs folder</strong> 
 
     Linux Users:
 
     - ` cd / `
     - ` cp path/to/project /opt/lampp/htdocs `
     
-4) Start lampp server
+4) <strong>Start lampp server</strong>
             
     Linux Users: 
     - ` cd opt/lampp/ `
     - ` sudo ./lampp start `
 
-5) Open ` localhost/project_name/index.php ` in browser
+5) <strong>Open ` localhost/project_name/index.php ` in browser</strong>
