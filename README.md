@@ -15,7 +15,7 @@
 
 ## 1) Download and Install xampp for your platform
         
-`[Link](https://www.apachefriends.org/download.html) `    
+[Link](https://www.apachefriends.org/download.html)    
     
 ## 2) Clone or download the project
 
